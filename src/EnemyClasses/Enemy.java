@@ -2,9 +2,10 @@ package EnemyClasses;
 
 
 public class Enemy {
-  private String enemyName;
-  private String enemyDesc;
-  private int healthPoints;
+  String enemyName;
+  String enemyDesc;
+  int healthPoints;
+  int experiencePoints;
 
 
   public String getEnemyName() {
