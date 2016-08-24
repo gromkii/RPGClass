@@ -1,5 +1,8 @@
 package PlayerClasses;
 
+import java.util.HashMap;
+import GameLogic.CharacterCreation;
+
 /**
  * Created by dax on 8/24/16.
  */
@@ -9,6 +12,9 @@ public class Player {
   protected String characterName;
   protected String className;
   protected String[] characterSkills;
+  protected int strength;
+  protected int intelligence;
+  protected int speed;
 
   public int getHP(){
     return healthPoints;
@@ -50,21 +56,56 @@ public class Player {
     characterSkills = newSkills;
   }
 
+  public int getStrength(){
+    return strength;
+  }
+
+  public void setStrength(int newStr){
+    strength = newStr;
+  }
+
+  public int getIntelligence() {
+    return intelligence;
+  }
+
+  public void setIntelligence(int intelligence) {
+    this.intelligence = intelligence;
+  }
+
+  public int getSpeed() {
+    return speed;
+  }
+
+  public void setSpeed(int speed) {
+    this.speed = speed;
+  }
+
+  public HashMap getStats(){
+    HashMap hm = new HashMap();
+    CharacterCreation newCharacter = new CharacterCreation();
+
+    hm.put(strength, newCharacter.rollStat());
+    hm.put(intelligence, newCharacter.rollStat());
+    hm.put(speed, newCharacter.rollStat());
+
+    return hm;
+  }
+
+  public void setStats(int strength, int intelligence, int speed) {
+    this.strength = strength;
+    this.intelligence = intelligence;
+    this.speed = speed;
+  }
+
   public String toString(){
     return characterName + ": [ Class: " + className + ", HP: " + healthPoints + ", MP: " + magicPoints + " ]";
   }
 
   public void listSkills(){
+    System.out.println("Skills:");
+
     for (String skill : characterSkills){
       System.out.println(skill);
     }
   }
-
-//  public Player(String newCharacterClass, String newCharacterName){
-//    characterName = newCharacterName;
-//    className = newCharacterClass;
-//    healthPoints = 50;
-//    magicPoints = 50;
-//    characterSkills = new String[] {"Attack", "Defend"};
-//  }
 }

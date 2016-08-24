@@ -21,6 +21,8 @@ public class MainGame {
     Player player = newCharacter.makeNewCharacter(characterClass,characterName);
 
     System.out.println(player.toString() + '\n');
+    player.setStats(newCharacter.rollStat(), newCharacter.rollStat(), newCharacter.rollStat());
+    System.out.println("[ STR: " + player.getStrength() + ", INT: " + player.getIntelligence() + ", SPD: " + player.getSpeed() + " ] \n");
     player.listSkills();
   }
 }

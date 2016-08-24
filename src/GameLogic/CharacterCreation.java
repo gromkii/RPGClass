@@ -1,6 +1,8 @@
 package GameLogic;
 
 
+import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 import PlayerClasses.*;
 
@@ -36,5 +38,26 @@ public class CharacterCreation {
       default:
         return null;
     }
+  }
+
+  public int rollStat(){
+    int lowest = 0;
+    int currentSum = 1;
+    Random rand = new Random();
+
+    for (int i = 0; i < 4; i++) {
+      int d6 = rand.nextInt(6) + 1;
+      if (d6 > lowest) {
+        currentSum += d6;
+      } else {
+        lowest = d6;
+      }
+    }
+
+    return currentSum;
+  }
+
+  public void setCharacterStats(){
+
   }
 }
