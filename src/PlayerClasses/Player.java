@@ -14,9 +14,9 @@ public class Player {
   String characterName;
   String className;
   String[] characterSkills;
-  int strength;
-  int intelligence;
-  int speed;
+  private int strength;
+  private int intelligence;
+  private int speed;
 
   public int getHP(){
     return healthPoints;

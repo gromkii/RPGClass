@@ -12,6 +12,7 @@ import PlayerClasses.*;
 public class CharacterCreation {
   Scanner userInput = new Scanner(System.in);
 
+
   public String getCharacterName(){
     String characterName = userInput.next();
 

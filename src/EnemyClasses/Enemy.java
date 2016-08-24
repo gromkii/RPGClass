@@ -1,11 +1,11 @@
 package EnemyClasses;
 
-/**
- * Created by dax on 8/24/16.
- */
+
 public class Enemy {
-  protected String enemyName;
-  protected String enemyDesc;
+  private String enemyName;
+  private String enemyDesc;
+  private int healthPoints;
+
 
   public String getEnemyName() {
     return enemyName;
@@ -21,5 +21,13 @@ public class Enemy {
 
   public void setEnemyDesc(String enemyDesc) {
     this.enemyDesc = enemyDesc;
+  }
+
+  public int getHealthPoints() {
+    return healthPoints;
+  }
+
+  public void setHealthPoints(int healthPoints) {
+    this.healthPoints = healthPoints;
   }
 }
