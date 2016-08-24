@@ -1,7 +1,8 @@
 package PlayerClasses;
 
-/**
- * Created by dax on 8/24/16.
+/*
+  Defines default Thief properties.
+  - Dax
  */
 public class Thief extends Player {
   public Thief() {

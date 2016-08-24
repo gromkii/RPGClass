@@ -1,14 +1,14 @@
+/*
+  Game Logic that handles the system i/o stream for creating a new character.
+  - Dax
+ */
+
 package GameLogic;
 
-
-import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 import PlayerClasses.*;
 
-/**
- * Created by dax on 8/24/16.
- */
 public class CharacterCreation {
   Scanner userInput = new Scanner(System.in);
 
@@ -47,6 +47,7 @@ public class CharacterCreation {
 
     for (int i = 0; i < 4; i++) {
       int d6 = rand.nextInt(6) + 1;
+
       if (d6 > lowest) {
         currentSum += d6;
       } else {

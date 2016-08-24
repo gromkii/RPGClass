@@ -1,8 +1,10 @@
+/*
+  Defines default Fighter properties.
+  - Dax
+ */
+
 package PlayerClasses;
 
-/**
- * Created by dax on 8/24/16.
- */
 public class Fighter extends Player {
   public Fighter(){
     healthPoints = 50;

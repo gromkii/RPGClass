@@ -1,10 +1,10 @@
+/*
+  Central class for all game logic. Does the stuff.
+  - Dax
+ */
+
 package GameLogic;
 
-import java.util.Scanner;
-
-/**
- * Created by dax on 8/24/16.
- */
 public class GameStart {
 
 }

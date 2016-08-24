@@ -1,20 +1,22 @@
+/*
+  Defines default Player parameters and methods.
+  - Dax
+ */
+
 package PlayerClasses;
 
 import java.util.HashMap;
 import GameLogic.CharacterCreation;
 
-/**
- * Created by dax on 8/24/16.
- */
 public class Player {
-  protected int healthPoints;
-  protected int magicPoints;
-  protected String characterName;
-  protected String className;
-  protected String[] characterSkills;
-  protected int strength;
-  protected int intelligence;
-  protected int speed;
+  int healthPoints;
+  int magicPoints;
+  String characterName;
+  String className;
+  String[] characterSkills;
+  int strength;
+  int intelligence;
+  int speed;
 
   public int getHP(){
     return healthPoints;

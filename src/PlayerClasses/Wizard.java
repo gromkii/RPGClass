@@ -1,7 +1,8 @@
 package PlayerClasses;
 
-/**
- * Created by dax on 8/24/16.
+/*
+  Defines default Wizard properties.
+  - Dax
  */
 public class Wizard extends Player {
 
