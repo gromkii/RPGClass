@@ -31,4 +31,8 @@ public class Enemy {
   public void setHealthPoints(int healthPoints) {
     this.healthPoints = healthPoints;
   }
+
+  public String toString(){
+    return "Name: " + enemyName + ", Description: " + enemyDesc + ", HP: " + healthPoints;
+  }
 }
