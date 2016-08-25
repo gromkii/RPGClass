@@ -37,6 +37,6 @@ public class Sword extends Weapon {
     weaponName = swordName;
     weaponDesc = swordDesc;
     weaponDamage = swordDamage;
-    weaponSpeed = swordSpeed;
+    weaponSpeed = swordSpeed;gi
   }
 }
